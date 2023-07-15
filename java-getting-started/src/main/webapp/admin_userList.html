@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Management System - Admin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="" class="logo"><span>Kereta Abang</span>Sewa - AdminPanel</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="admin_adminList.html">Admin</a>
+        <a href="admin_userList.html">User</a>
+        
+    </nav>
+  </header>
+
+
+  <!-- customer List -->
+  <div class="userList">
+    <h2>User Details List</h2>
+    <table id="user-table">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Phone Number</th>
+      <th>IC Number</th>
+      <th>Address</th>
+      
+    </tr>
+    </thead>
+    <tbody id="user-table-body">
+    <!-- Admin data rows will be added dynamically using JavaScript -->
+    </tbody>
+    </table>
+    </div>
+
+  <script>
+    // header
+    let menu = document.querySelector('#menu-btn');
+          let navbar = document.querySelector('.navbar');
+
+          menu.onclick = () =>{
+              menu.classList.toggle('fa-times');
+              navbar.classList.toggle('active');
+          }
+          document.querySelector('#login-btn').onclick = () =>{
+              document.querySelector('.login-form-container').classList.toggle('active');
+          }
+          document.querySelector('#close-login-form').onclick = () =>{
+              document.querySelector('.login-form-container').classList.remove('active');
+          }
+
+          window.onscroll = () =>{
+              if(window.scrollY >0){
+                  document.querySelector('.header').classList.add('active');
+              }
+              else{
+                  document.querySelector('.header').classList.remove('active');
+              }
+              menu.classList.remove('fa-times');
+              navbar.classList.remove('active');
+          }
+          window.onload = () =>{
+              if(window.scrollY >0){
+                  document.querySelector('.header').classList.add('active');
+              }
+              else{
+                  document.querySelector('.header').classList.remove('active');
+              }
+          }
+  </script>
+</body>
+</html>

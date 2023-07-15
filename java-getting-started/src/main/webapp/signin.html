@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="" class="logo"><span>Kereta Sewa</span>Abang</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#vehicles">Car</a>
+            <a href="#Schdule">Schedule</a>
+            <a href="bookingstatus.html">Booking</a>
+            <a href="#Payment">Payment</a>
+        </nav>
+
+        <div id="login-btn">
+            <button class="btn">login</button>
+            <i class="far fa-user"></i>
+        </div>
+    </header>
+
+    <div class="login-form-container" id="login-form-container">
+        <span class="fas fa-times" id="close-login-form"></span>
+        <form action="">
+            <h3>user login</h3>
+            <input type="Name" placeholder="Name" class="box" required>
+            <input type="password" placeholder="password" class="box" required>
+
+            <input type="submit" value="login now" class="btn">
+            <p>don't have an account? <a href="signup.html">create one</a> </p>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>

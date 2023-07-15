@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Payment Selection</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+        <header class="header">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="" class="logo"><span>Kereta Sewa</span> Abang</a>
+    
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#Vehicles">vehicles</a>
+                <a href="#home">Services</a>
+                <a href="#home">Featured</a>
+                <a href="#home">Review</a>
+                <a href="#home">Feedback</a>
+            </nav>
+        </header>
+
+    
+
+
+    <br><br><br><br><br><br><br><br>
+
+    <main>
+    <div class="container">
+        <h1>Payment Selection</h1>
+        <br><br><br>
+        <form id="card-form">
+            <label for="payment-id">Payment ID</label>
+                <input type="text" id="payment-id" required>
+                <label for="booking-id">Booking ID</label>
+                <input type="text" id="Booking-id" required>
+                <br><br><br>
+                <h2>Method</h2>
+        </form>
+        
+
+        <div id="choice-container">
+            <button id="cash">Cash</button>
+            <button id="card">Card</button>
+        </div>
+      
+        <div id="card-info" style="display: none;">
+            <h2>Card Information</h2>
+            <form id="card-form">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" required>
+                <br>
+                <label for="card-name">Cardholder Name:</label>
+                <input type="text" id="card-name" required>
+                <br>
+                <label for="card-type">Card Type</label>
+                <br>
+                <div class="radio-container">
+                    <input type="radio" id="debitRadio" name="userType" value="debit">
+                    <label for="debitRadio">Debit</label>
+                  </div>
+                
+                  <div class="radio-container">
+                    <input type="radio" id="creditRadio" name="userType" value="credit">
+                    <label for="creditRadio">credit</label>
+                  </div>
+                  <br>
+
+                  <label for="card-cv">Card CV:</label>
+                <input type="text" id="card-cv" required>
+                <br>
+
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="text" id="expiry-date" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="result"></div>
+    </div>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
